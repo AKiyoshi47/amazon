@@ -1,0 +1,58 @@
+<div class="popup-container">
+    <div class="popup-background">
+
+    </div>
+    <button id="popup-close" class="popup-close">&times; 
+      <script>
+        const button = document.getElementById('popup-close');
+        button.addEventListener('click', () => {
+         window.location.href = 'home.html';
+});
+      </script>
+    </button>
+    
+    
+    <div class="popup">
+      <!-- popup content goes here -->
+      <head>
+        <title>Flashing Text</title>
+        <style>
+          @keyframes flash {
+            0% {
+              opacity: 1;
+            }
+            50% {
+              opacity: 0;
+            }
+            100% {
+              opacity: 1;
+            }
+          }
+    
+          .flashing-text {
+            animation: flash 1s infinite;
+          }
+          .popup{
+            position:absolute;
+            left: 35%
+          }
+        </style>
+      </head>
+      <body>
+        <h1 class="flashing-text" style="color: red;">WARNING! WARNING! WARNING!</h1>
+        <p>This is a popup window. If you are seeing this Kyla M. Harris, YOU have failed the test!
+        </p>
+     <p>
+      X out of the pop up now smh. Likeeee what if you were hacked
+     </p>
+      </body>
+      <img src="warning.jpg" height="500">
+    </div>
+  </div>
+  
+  <!--<h1> WARNING! WARNING! WARNING!</h1>
+      <p>This is a popup window. If you are seeing this Kyla M. Harris have failed the test!
+      </p>
+   <p>
+    X out of the pop up now smh.
+   </p>-->
