@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promposal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <style>
+
+        body {
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+
+
+ <header>
+    <style>
+        body {
+          position: relative;
+          height: 100vh;
+          margin: 0;
+        }
+  
+        h1 {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 3rem;
+          text-align: center;
+        }
+        h2 {
+            position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 3rem;
+          text-align: center; 
+        }
+      </style>
+    <h1 style="color: gold;"> Isaiah's Promposal</h1>
+<h2 style="color: red">Kyla Harris will you go to prom with me?</h2>
+ </header>
+
+ <nav>
+    <div class="button-container">
+        <button id="button1" class="button1">Yes</button>
+        <button id="button2" class="button2">No</button>
+      </div>
+
+      <style>
+        .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button1:hover {
+  background-color: #3e8e41;
+}
+     
+.button2 {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button2:hover {
+  background-color: #3e8e41;
+}
+     </style>
+    
+    <script>
+        const button = document.getElementById('button1');
+        button.addEventListener('click', () => {
+         window.location.href = 'trial2.html';
+});
+
+let clicks =0;
+const button2 = document.getElementById('button2');
+        button2.addEventListener('click', () => {
+         clicks++;
+         button2.innerHTML = "YES!";
+         if (clicks === 2) {
+            window.location.href = 'trial2.html';
+  }
+        
+});
+
+      </script>
+     
+ </nav>
+
+ <main>
+
+ </main>
+
+ <footer>
+
+ </footer>
+</body>
+
+</html>
