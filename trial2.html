@@ -1,0 +1,230 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    
+  <head>
+    <title>Pink Hearts</title>
+
+    <style>
+      body {
+        position: relative;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+    .left {
+    width: 80px;
+    height: 120px;
+    background-color: pink;
+    display: block;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(-50deg);
+    left: 60px;
+    position: absolute
+  }
+  .right {
+    width: 80px;
+    height: 120px;
+    background-color: pink;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    transform: rotate(50deg);
+  }
+  .heart {
+    position: absolute;
+        top: 0;
+        left: 50%;
+        width: 100px;
+        background-color: pink;
+       
+    position: relative;
+    animation: float 2s ease-in-out infinite;
+  }
+      
+
+      .heart:nth-child(1) {
+        top: 10%;
+        animation-duration: 3s;
+      }
+
+      .heart:nth-child(2) {
+        top: 10%;
+        left: 80%;
+        animation-duration: 4s;
+      }
+
+      .heart:nth-child(3) {
+        top: 40%;
+        left: 30%;
+        animation-duration: 5s;
+      }
+
+      .heart:nth-child(4) {
+        top: 60%;
+        left: 70%;
+        animation-duration: 6s;
+      }
+
+      .heart:nth-child(5) {
+        top: 80%;
+        left: 10%;
+        animation-duration: 7s;
+      }
+
+      .heart:nth-child(6) {
+        top: 15%;
+        left: 5%;
+        animation-duration: 5s;
+      }
+
+      .heart:nth-child(7) {
+        top: 90%;
+        left: 60%;
+        animation-duration: 3s;
+      }
+      .heart:nth-child(8) {
+        top: 10%;
+        left: 80%;
+        animation-duration: 9s;
+      }
+      .heart:nth-child(9) {
+        top: 50%;
+        left: 20%;
+        animation-duration: 2s;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0) rotate(-45deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(-45deg);
+        }
+        100% {
+          transform: translateY(0) rotate(-45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: gold;"> This Is For You My Love</h2>
+        <style>
+            h1{
+                text-align:center
+            }
+        </style>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <style>
+        body{
+            background-color:bisque
+        }
+    </style>
+  </body>
+</html>
+
+<div id="slideshow" class="container">
+    <img src="kyla.jpg" alt="Image 1">
+    <img src="kyla1.jpeg" alt="Image 2">
+    <img src="kyla2.jpg" alt="Image 3">
+    <img src="kyla3.jpg" alt="Image 1">
+    <img src="kyla4.jpg" alt="Image 1">
+    <img src="kyla5.jpg" alt="Image 1">
+    <img src="kyla6.jpg" alt="Image 1">
+    <img src="kyla7.jpg" alt="Image 1">
+    <img src="kyla8.jpg" alt="Image 1">
+    <img src="kyla9.jpg" alt="Image 1">
+    <img src="kyla10.jpg" alt="Image 1">
+    <img src="kyla11.jpg" alt="Image 1">
+    <img src="kyla12.jpg" alt="Image 1">
+    <img src="kyla13.jpg" alt="Image 1">
+    <img src="kyla14.jpg" alt="Image 1">
+    <img src="kyla15.jpg" alt="Image 1">
+    <img src="kyla16.jpg" alt="Image 1">
+    <img src="kyla17.jpg" alt="Image 1">
+
+    <!-- Add more images as needed -->
+  </div>
+
+
+<style>
+    #slideshow {
+  position: relative;
+  height: 300px; /* Set the height of the slideshow */
+}
+
+#slideshow img {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  width: 37%;
+  height: 270%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+#slideshow img:first-child {
+  opacity: 1;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+
+<script>
+const slideshow = document.getElementById("slideshow");
+const images = slideshow.getElementsByTagName("img");
+
+let i = 0;
+setInterval(() => {
+  for (let j = 0; j < images.length; j++) {
+    images[j].style.opacity = 0;
+  }
+  images[i].style.opacity = 1;
+  i = (i + 1) % images.length;
+}, 3000);
+</script>
+</html>
