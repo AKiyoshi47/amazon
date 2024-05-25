@@ -114,6 +114,19 @@
     </style>
   </head>
   <body>
+    <audio id="myAudio" src="live_forever.mp3"></audio>
+    <style>
+        #myAudio {
+  display: none;
+}
+    </style>
+    <script>
+        window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("#myAudio");
+  audio.volume = 0.5;
+  audio.play();
+});
+    </script>
     <h1 style="color: gold;"> This Is For You My Love</h2>
         <style>
             h1{
